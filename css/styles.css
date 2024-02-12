@@ -2,6 +2,7 @@
 * {
     font-family: "Roboto", sans-serif;
     color: white;
+    margin: 0;
 }
 html {
   scroll-behavior: smooth;
@@ -33,7 +34,7 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  line-height: 12px;
+  line-height: 1.3;
   height: 100vh;
   scroll-snap-align:end;
 }
@@ -68,7 +69,7 @@ div {
 }
 .slider {
   display: flex;
-  margin: 5px 20px;
+  margin: 0px 20px;
 }
 .slidersContainer {
   position: relative;
@@ -99,7 +100,30 @@ div {
 }
 .gallery {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .gallery img {
-  width: 50vh;
+  width: 40vh;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 5px;
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width:850px) {
+  .gallery img {
+    width: 20vh;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 5px;
+  }
 }
